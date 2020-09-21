@@ -6,6 +6,7 @@
 /* reset */
 
 .navbar {
+    width: 100%;
     background: #fff;
     border: none;
     padding: 1% 0 1% 0;
@@ -18,7 +19,7 @@
 .navbar-inverse .navbar-brand p{
     color: #222;
     position: relative;
-    bottom: 45%;
+    bottom: 48%;
     font-family: 'Noto Sans', sans-serif;
 }
 .navbar-brand {
