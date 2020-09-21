@@ -8,9 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="htt"></script>
     <link rel="stylesheet" href="css/style.css">
+    <!-- main css -->
     <link rel="stylesheet" href="css/animate.css">
+    <!-- wow css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos css -->
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -32,7 +35,6 @@
                     <li><a href="#">특장점</a></li>
                     <li><a href="#">스펙</a></li>
                     <li><a href="#">고객지원</a></li>
-                    <button type="button" class="navbar-nav-btn">더 알아보기</button>
                 </ul>
             </div>
         </div>
@@ -48,7 +50,12 @@
                             손목 시계의 감성을 모두 담은
                             새로운 워치의 기준, 갤럭시 워치
                         </p>
-                    </div>    
+                    </div>
+                    <div class="col-sm-12 sec01-main" data-aos="zoom-in"
+                    data-aos-duration="1000">
+                        <img src="images/main.JPG" alt="">     
+                    </div>
+                      
                 </div>
             </div>
         </div>
@@ -59,7 +66,8 @@
     <section id="section02">
         <div class="container">
             <div class="row sec02-con">
-                    <div class="col-sm-6 content-img">
+                    <div class="col-sm-6 content-img" data-aos="fade-up"
+                    data-aos-duration="1000">
                         <img src="images/sec02-1.webp" alt="">
                     </div>  
                     <div class="col-sm-6 text-left sec02-txt">
@@ -82,14 +90,16 @@
                         그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다. <br>
                         덕분에 건강 관리가 쉬워집니다.</p>
                 </div>  
-                <div class="col-sm-6 content-img">
+                <div class="col-sm-6 content-img" data-aos="fade-up"
+                data-aos-duration="2000">
                     <img src="images/sec02-2.webp" alt="">
                 </div>  
             </div>
             <div class="row sec02-con">
-                <div class="col-sm-6 content-img">
+                <div class="col-sm-6 content-img" data-aos="fade-up"
+                data-aos-duration="3000">
                     <img src="images/sec02-3.webp" alt="">
-                </div>  
+                </div>
                 <div class="col-sm-6 text-left sec02-txt">
                     <h2>수면과 휴식 개선</h2>
                     <p>어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다. <br>
@@ -109,5 +119,11 @@
     <!-- section04 -->
     <section></section>
     <!-- section05 --> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos js -->
 </body>
 </html>

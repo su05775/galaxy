@@ -40,16 +40,17 @@
 
 #section01 {
     width: 80%;
-    height: 750px;
-    background: url(../images/main.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 760px;
+    background-color: black;
     padding-top: 2%;
     line-height: 50px;
     font-family: 'Noto Sans', sans-serif;
     margin: 0 auto;
     line-height: 50px;
+}
+
+.sec01-main {
+    padding-left: 24%;
 }
 /* section01 end */
 
