@@ -24,7 +24,7 @@
     color: #222;
     position: relative;
     bottom: 48%;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'S-CoreDream-4Regular';
 }
 .navbar-brand {
     display: flex;
@@ -37,7 +37,7 @@
     color: #555;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'S-CoreDream-4Regular';
 }
 
 /* nav end */
@@ -54,9 +54,11 @@
 }
 .sec01-text1{
     font-size: 60px;
+    font-family: 'S-CoreDream-6Bold';
 }
 .sec01-text2 {
     font-size: 16px;
+    font-family: 'S-CoreDream-4Regular';
 }
 .sec01-main img {
     padding-top:1%
@@ -82,8 +84,12 @@
 .sec02-con {
     flex-direction: column;
 }
-
-.sec02-con h1,h2 {
+.sec02-con h1 {
+    width: 98%;
+    font-family: 'S-CoreDream-6Bold';
+    color: #333;
+}
+.sec02-con h2 {
     width: 98%;
     font-family: 'S-CoreDream-4Regular';
 }
@@ -172,10 +178,11 @@
 }
 
 .sec02-daily {
-    padding-top:12%
+    padding-top:12%;
+    font-family: 'S-CoreDream-6Bold';
 }
 .sec02-daily h1 {
-    color: #222;
+    color: #333;
 }
 .sec02-daily p {
     font-family: 'S-CoreDream-4Regular';
@@ -189,7 +196,10 @@
     padding-top: 2%;
     padding-bottom: 2%;
 }
-
+.sec03-text {
+    font-family: 'S-CoreDream-6Bold';
+    color: #333;
+}
 .container h1 {
     padding-bottom: 2%;
 }
