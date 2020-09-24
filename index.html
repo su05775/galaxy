@@ -8,12 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- swiper css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- wow css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- aos css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -44,18 +48,14 @@
     <section id="section01" >
         <div class="container-fluid">
             <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h1 class="white-text">Watch, The Galaxy Watch</h1>
-                        <p class="white-text">스마트 워치의 다양한 기능과 
+                    <div class="col-sm-12 sec01-main text-center">
+                        <h1 class="white-text sec01-text1">Watch, The Galaxy Watch</h1>
+                        <p class="white-text sec01-text2">스마트 워치의 다양한 기능과 
                             손목 시계의 감성을 모두 담은
                             새로운 워치의 기준, 갤럭시 워치
-                        </p>
+                        </p> 
+                        <img src="images/sec01_main.png" alt=""> 
                     </div>
-                    <div class="col-sm-12 sec01-main" data-aos="zoom-in"
-                    data-aos-duration="1000">
-                        <img src="images/main.JPG" alt="">     
-                    </div>
-                      
                 </div>
             </div>
         </div>
@@ -65,55 +65,184 @@
     
     <section id="section02">
         <div class="container">
-            <div class="row sec02-con">
-                    <div class="col-sm-6 content-img" data-aos="fade-up"
-                    data-aos-duration="1000">
+            <div class="row">
+                <div class="col-sm-12 sec02-con">
+                    <h1 class="text-center">
+                        업그레이드된 Galaxy Watch 기능 
+                    </h1>
+                    <div class="col-sm-4 content-img text-center" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/sec02-1.webp" alt="">
-                    </div>  
-                    <div class="col-sm-6 text-left sec02-txt">
                         <h2>다양한 운동 트래킹</h2>
-                        <p>모두가 운동의 중요성을 알지만 모두에게 운동이 쉬운 건 아니죠. <br>
-                            갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다. <br>
-                            39가지의 운동 종목 중 트래킹이 가능하며, <br>
-                            운동하는 동안 심박수와 칼로리를 측정해줍니다. <br>
-                            또한 하나의 운동이 끝나고 다음 운동으로 이어할 수 있어 <br>
-                            흐름이 끊기지 않고 혼자서도 체계적인 운동을 <br>
-                            꾸준히 이어갈 수 있습니다.</p>
-                    </div>  
-            </div>
-            <div class="row sec02-con">
-                <div class="col-sm-6 text-right sec02-txt">
+                        <p>모두가 운동의 중요성을 알지만 모두에게 <br>
+                        운동이 쉬운 건 아니죠. <br>
+                        갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다. <br>
+                        39가지의 운동 종목 중 트래킹이 가능하며, <br>
+                        운동하는 동안 심박수와 칼로리를 측정해줍니다. <br>
+                        또한 하나의 운동이 끝나고 다음 운동으로 <br> 이어할 수 있어 
+                        흐름이 끊기지 않고 혼자서도 체계적인 운동을
+                        꾸준히 이어갈 수 있습니다.</p>
+                    </div>
+                    <div class="col-sm-4 content-img text-center" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <img src="images/sec02-2.webp" alt="">
                     <h2>건강 모니터링</h2>
                     <p>스스로 확인하기 쉽지 않은 나의 건강 정보를 <br>
                         확인할 수 있다면 얼마나 좋을까요? <br>
                         삼성 헬스 앱으로 스트레스 지수, 심박수와 칼로리 <br>
-                        그리고 더 많은 건강정보를 기록하고 체크할 수 있습니다. <br>
+                        그리고 더 많은 건강정보를 기록하고 <br> 체크할 수 있습니다. <br>
                         덕분에 건강 관리가 쉬워집니다.</p>
-                </div>  
-                <div class="col-sm-6 content-img" data-aos="fade-up"
-                data-aos-duration="2000">
-                    <img src="images/sec02-2.webp" alt="">
-                </div>  
-            </div>
-            <div class="row sec02-con">
-                <div class="col-sm-6 content-img" data-aos="fade-up"
-                data-aos-duration="3000">
+                    </div>       
+                    <div class="col-sm-4 content-img text-center" data-aos="fade-up"
+                    data-aos-duration="3000">
                     <img src="images/sec02-3.webp" alt="">
-                </div>
-                <div class="col-sm-6 text-left sec02-txt">
                     <h2>수면과 휴식 개선</h2>
                     <p>어쩌면 가장 중요한 건 쉬어가는 것일지도 모릅니다. <br>
-                        잠을 제대로 못 이루거나 과도한 스트레스를 받을 때 <br>
-                        내 몸의 건강 정보를 체크 할 수 있습니다. <br>
-                        당신이 잠든 사이 수면 상태를 측정해 4단계로 진단하고 <br>
-                        스트레스 지수가 높을 때엔 스트레스를 낮춰주는 <br>
+                    잠을 제대로 못 이루거나 과도한 스트레스를 받을 때 <br>
+                    내 몸의 건강 정보를 체크 할 수 있습니다. <br>
+                        당신이 잠든 사이 수면 상태를 측정해  <br> 4단계로 진단하고
+                        스트레스 지수가 높을 때엔  <br> 스트레스를 낮춰주는
                         숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
-                </div>  
-            </div>
+                    </div>
+                </div> 
+                <div class="col-sm-12 sec02-clear"></div>
+                <div class="col-sm-12">
+                    <div class="col-sm-6 sec02-daily">
+                        <h1 class=" text-center">Daily Briefing</h1>
+                        <p class="text-center">하루의 시작과 끝을 함께합니다. <br>
+                            매일 아침 날씨, 스케쥴, 리마인더 등 필요한 정보를 알려주며, <br>
+                            자기 전에는 완료되지 못한 리마인더와 그 날의 활동량을 알려줍니다.</p>
+                    </div>
+                    <div class="col-sm-6 ba-slider-container">
+                        <div class="ba-slider">
+                            <img src="images/sun.jpg" alt="">       
+                            <div class="resize">
+                              <img src="images/night.jpg" alt="">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <script type="text/javascript">
+                    // Call & init
+                    $(document).ready(function(){
+                    $('.ba-slider').each(function(){
+                        var cur = $(this);
+                        // Adjust the slider
+                        var width = cur.width()+'px';
+                        cur.find('.resize img').css('width', width);
+                        // Bind dragging events
+                        drags(cur.find('.handle'), cur.find('.resize'), cur);
+                    });
+                    });
+
+                    // Update sliders on resize. 
+                    // Because we all do this: i.imgur.com/YkbaV.gif
+                    $(window).resize(function(){
+                    $('.ba-slider').each(function(){
+                        var cur = $(this);
+                        var width = cur.width()+'px';
+                        cur.find('.resize img').css('width', width);
+                    });
+                    });
+
+                    function drags(dragElement, resizeElement, container) {
+                        
+                    // Initialize the dragging event on mousedown.
+                    dragElement.on('mousedown touchstart', function(e) {
+                        
+                        dragElement.addClass('draggable');
+                        resizeElement.addClass('resizable');
+                        
+                        // Check if it's a mouse or touch event and pass along the correct value
+                        var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+                        
+                        // Get the initial position
+                        var dragWidth = dragElement.outerWidth(),
+                            posX = dragElement.offset().left + dragWidth - startX,
+                            containerOffset = container.offset().left,
+                            containerWidth = container.outerWidth();
+                    
+                        // Set limits
+                        minLeft = containerOffset + 10;
+                        maxLeft = containerOffset + containerWidth - dragWidth - 10;
+                        
+                        // Calculate the dragging distance on mousemove.
+                        dragElement.parents().on("mousemove touchmove", function(e) {
+                            
+                        // Check if it's a mouse or touch event and pass along the correct value
+                        var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+                        
+                        leftValue = moveX + posX - dragWidth;
+                        
+                        // Prevent going off limits
+                        if ( leftValue < minLeft) {
+                            leftValue = minLeft;
+                        } else if (leftValue > maxLeft) {
+                            leftValue = maxLeft;
+                        }
+                        
+                        // Translate the handle's left value to masked divs width.
+                        widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+                                
+                        // Set the new values for the slider and the handle. 
+                        // Bind mouseup events to stop dragging.
+                        $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+                            $(this).removeClass('draggable');
+                            resizeElement.removeClass('resizable');
+                        });
+                        $('.resizable').css('width', widthValue);
+                        }).on('mouseup touchend touchcancel', function(){
+                        dragElement.removeClass('draggable');
+                        resizeElement.removeClass('resizable');
+                        });
+                        e.preventDefault();
+                    }).on('mouseup touchend touchcancel', function(e){
+                        dragElement.removeClass('draggable');
+                        resizeElement.removeClass('resizable');
+                    });
+                    }
+                </script>
+            </div>     
         </div>
     </section>
     <!-- section02 -->
-    <section></section>
+
+    <section id="section03">
+        <div class="container">
+            <h1 class="text-center">스트랩 교체로 다양한 스타일 변신</h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/sec03-1.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sec03-2.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sec03-3.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sec03-4.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/sec03-5.webp" alt="">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
+    </section>
     <!-- section03 -->
     <section></section>
     <!-- section04 -->
