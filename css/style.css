@@ -71,6 +71,7 @@
     margin: 0 auto;
 }
 
+
 .content-img img {
     width: 70%;
 }
@@ -178,7 +179,7 @@
 }
 
 .sec02-daily {
-    padding-top:12%;
+    padding-top:14%;
     font-family: 'S-CoreDream-6Bold';
 }
 .sec02-daily h1 {
