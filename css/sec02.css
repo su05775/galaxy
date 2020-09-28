@@ -118,7 +118,15 @@ p {
 .sec02-water img {
     width: 100%;
 }
-
+.sec02-5>button {
+    background-color: #fff;
+    width: 98%;
+    color: #333;
+    font-weight: bold;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 30px;
+    border: none;
+}
 .sec02-5-img {
     width: 40%;
     height: 346px;
