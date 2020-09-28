@@ -29,13 +29,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">
+                <a href="#" class="navbar-brand" 
+                data-aos-duration="3000" data-aos="fade-right">
                     <img src="images/logo.svg" alt="logo">
                     <p class="text-center">Galaxy Watch</p>
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" 
+                data-aos-duration="3000"data-aos="fade-left">
                     <li><a href="#">특장점</a></li>
                     <li><a href="#">스펙</a></li>
                     <li><a href="#">고객지원</a></li>
@@ -46,15 +48,16 @@
         <!-- nav end -->
     
     <section id="section01" >
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                    <div class="col-sm-12 sec01-main text-center">
-                        <h1 class="white-text sec01-text1">Watch, The Galaxy Watch</h1>
-                        <p class="white-text sec01-text2">스마트 워치의 다양한 기능과 
-                            손목 시계의 감성을 모두 담은
+                    <div class="col-sm-12 text-center">
+                        <h1 class=" sec01-text1">Watch, The Galaxy Watch</h1>
+                        <p class=" sec01-text2">스마트 워치의 다양한 기능과 손목 시계의 감성을 모두 담은
                             새로운 워치의 기준, 갤럭시 워치
-                        </p> 
-                        <img src="images/sec01_main.png" alt=""> 
+                        </p>  
+                    </div>
+                    <div class="col-sm-12 sec01-main" data-aos="zoom-in"
+                    data-aos-duration="1500">
                     </div>
                 </div>
             </div>
@@ -73,9 +76,7 @@
                     <div class="col-sm-4 content-img text-center" data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/sec02-1.webp" alt="">
                         <h2>다양한 운동 트래킹</h2>
-                        <p>모두가 운동의 중요성을 알지만 모두에게 <br>
-                        운동이 쉬운 건 아니죠. <br>
-                        갤럭시 워치는 트레이너처럼 운동에 집중 할 수 있도록 도와줍니다. <br>
+                        <p>
                         39가지의 운동 종목 중 트래킹이 가능하며, <br>
                         운동하는 동안 심박수와 칼로리를 측정해줍니다. <br>
                         또한 하나의 운동이 끝나고 다음 운동으로 <br> 이어할 수 있어 
@@ -103,106 +104,17 @@
                         스트레스 지수가 높을 때엔  <br> 스트레스를 낮춰주는
                         숨쉬기 가이드 제공으로 휴식을 도와줍니다.</p>
                     </div>
+                    <div class="col-sm-12 sec02-water">
+                        <h2 class="text-center">방수와 충격에 강한 내구성</h2>
+                        <p class="text-center">비가 와도, 충격을 받아도 걱정할 필요 없습니다. <br>
+                            갤럭시 워치는 5 ATM* 방수 성능과 
+                            Military 표준* 내구성을 갖춰 극한 상황에서도 문제없습니다.</p>
+                        <img src="images/sec02-4.webp" alt="">
+                    </div>
+                    <div class="col-sm-12 clear"></div>
                 </div> 
-                <div class="col-sm-12 clear"></div>
-                <div class="col-sm-12">
-                    <div class="col-sm-6 sec02-daily">
-                        <h1 class=" text-center">Daily Briefing</h1>
-                        <p class="text-center">하루의 시작과 끝을 함께합니다. <br>
-                            매일 아침 날씨, 스케쥴, 리마인더 등 필요한 정보를 알려주며, <br>
-                            자기 전에는 완료되지 못한 리마인더와 그 날의 활동량을 알려줍니다.</p>
-                    </div>
-                    <div class="col-sm-6 ba-slider-container">
-                        <div class="ba-slider">
-                            <img src="images/sun.jpg" alt="">       
-                            <div class="resize">
-                              <img src="images/night.jpg" alt="">
-                            </div>
-                            <span class="handle"></span>
-                        </div>
-                    </div>
-                    
-                </div>
-                <script type="text/javascript">
-                    // Call & init
-                    $(document).ready(function(){
-                    $('.ba-slider').each(function(){
-                        var cur = $(this);
-                        // Adjust the slider
-                        var width = cur.width()+'px';
-                        cur.find('.resize img').css('width', width);
-                        // Bind dragging events
-                        drags(cur.find('.handle'), cur.find('.resize'), cur);
-                    });
-                    });
-
-                    // Update sliders on resize. 
-                    // Because we all do this: i.imgur.com/YkbaV.gif
-                    $(window).resize(function(){
-                    $('.ba-slider').each(function(){
-                        var cur = $(this);
-                        var width = cur.width()+'px';
-                        cur.find('.resize img').css('width', width);
-                    });
-                    });
-
-                    function drags(dragElement, resizeElement, container) {
-                        
-                    // Initialize the dragging event on mousedown.
-                    dragElement.on('mousedown touchstart', function(e) {
-                        
-                        dragElement.addClass('draggable');
-                        resizeElement.addClass('resizable');
-                        
-                        // Check if it's a mouse or touch event and pass along the correct value
-                        var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-                        
-                        // Get the initial position
-                        var dragWidth = dragElement.outerWidth(),
-                            posX = dragElement.offset().left + dragWidth - startX,
-                            containerOffset = container.offset().left,
-                            containerWidth = container.outerWidth();
-                    
-                        // Set limits
-                        minLeft = containerOffset + 10;
-                        maxLeft = containerOffset + containerWidth - dragWidth - 10;
-                        
-                        // Calculate the dragging distance on mousemove.
-                        dragElement.parents().on("mousemove touchmove", function(e) {
-                            
-                        // Check if it's a mouse or touch event and pass along the correct value
-                        var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-                        
-                        leftValue = moveX + posX - dragWidth;
-                        
-                        // Prevent going off limits
-                        if ( leftValue < minLeft) {
-                            leftValue = minLeft;
-                        } else if (leftValue > maxLeft) {
-                            leftValue = maxLeft;
-                        }
-                        
-                        // Translate the handle's left value to masked divs width.
-                        widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
-                                
-                        // Set the new values for the slider and the handle. 
-                        // Bind mouseup events to stop dragging.
-                        $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
-                            $(this).removeClass('draggable');
-                            resizeElement.removeClass('resizable');
-                        });
-                        $('.resizable').css('width', widthValue);
-                        }).on('mouseup touchend touchcancel', function(){
-                        dragElement.removeClass('draggable');
-                        resizeElement.removeClass('resizable');
-                        });
-                        e.preventDefault();
-                    }).on('mouseup touchend touchcancel', function(e){
-                        dragElement.removeClass('draggable');
-                        resizeElement.removeClass('resizable');
-                    });
-                    }
-                </script>
+                
+                
             </div>     
         </div>
     </section>
@@ -210,8 +122,127 @@
 
     <section id="section03">
         <div class="container">
+            <div class="col-sm-12">
+                <div class="col-sm-6 sec03-daily">
+                    <h1 class=" text-center">Daily Briefing</h1>
+                    <p class="text-center">하루의 시작과 끝을 함께합니다. <br>
+                        매일 아침 날씨, 스케쥴, 리마인더 등 필요한 정보를 알려주며, <br>
+                        자기 전에는 완료되지 못한 리마인더와 그 날의 활동량을 알려줍니다.</p>
+                </div>
+                <div class="col-sm-6 ba-slider-container">
+                    <div class="ba-slider">
+                        <img src="images/sun.jpg" alt="">       
+                        <div class="resize">
+                          <img src="images/night.jpg" alt="">
+                        </div>
+                        <span class="handle"></span>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                // Call & init
+                $(document).ready(function(){
+                $('.ba-slider').each(function(){
+                    var cur = $(this);
+                    // Adjust the slider
+                    var width = cur.width()+'px';
+                    cur.find('.resize img').css('width', width);
+                    // Bind dragging events
+                    drags(cur.find('.handle'), cur.find('.resize'), cur);
+                });
+                });
+    
+                // Update sliders on resize. 
+                // Because we all do this: i.imgur.com/YkbaV.gif
+                $(window).resize(function(){
+                $('.ba-slider').each(function(){
+                    var cur = $(this);
+                    var width = cur.width()+'px';
+                    cur.find('.resize img').css('width', width);
+                });
+                });
+    
+                function drags(dragElement, resizeElement, container) {
+                    
+                // Initialize the dragging event on mousedown.
+                dragElement.on('mousedown touchstart', function(e) {
+                    
+                    dragElement.addClass('draggable');
+                    resizeElement.addClass('resizable');
+                    
+                    // Check if it's a mouse or touch event and pass along the correct value
+                    var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+                    
+                    // Get the initial position
+                    var dragWidth = dragElement.outerWidth(),
+                        posX = dragElement.offset().left + dragWidth - startX,
+                        containerOffset = container.offset().left,
+                        containerWidth = container.outerWidth();
+                
+                    // Set limits
+                    minLeft = containerOffset + 10;
+                    maxLeft = containerOffset + containerWidth - dragWidth - 10;
+                    
+                    // Calculate the dragging distance on mousemove.
+                    dragElement.parents().on("mousemove touchmove", function(e) {
+                        
+                    // Check if it's a mouse or touch event and pass along the correct value
+                    var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+                    
+                    leftValue = moveX + posX - dragWidth;
+                    
+                    // Prevent going off limits
+                    if ( leftValue < minLeft) {
+                        leftValue = minLeft;
+                    } else if (leftValue > maxLeft) {
+                        leftValue = maxLeft;
+                    }
+                    
+                    // Translate the handle's left value to masked divs width.
+                    widthValue = (leftValue + dragWidth/2 - containerOffset)*100/containerWidth+'%';
+                            
+                    // Set the new values for the slider and the handle. 
+                    // Bind mouseup events to stop dragging.
+                    $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+                        $(this).removeClass('draggable');
+                        resizeElement.removeClass('resizable');
+                    });
+                    $('.resizable').css('width', widthValue);
+                    }).on('mouseup touchend touchcancel', function(){
+                    dragElement.removeClass('draggable');
+                    resizeElement.removeClass('resizable');
+                    });
+                    e.preventDefault();
+                }).on('mouseup touchend touchcancel', function(e){
+                    dragElement.removeClass('draggable');
+                    resizeElement.removeClass('resizable');
+                });
+                }
+            </script>
+        </div>
+    </section>
+    <!-- section03 -->
+
+    <section>
+        <div class="container">
             <div class="col-sm-12 clear"></div>
-            <h1 class="text-center sec03-text">스트랩 교체로 다양한 스타일 변신</h1>
+            <h1 class="sec-text text-center">나만의 룩을 완성하는 갤럭시 워치</h1>
+            <p class="text-center">실버와 블랙을 유연하게 매치한 세련된 46 mm 실버,
+                컴팩트한 크기와 트렌디한 색감 42 mm 미드나잇 블랙, <br>
+                영롱한 빛을 발하는 골드의 우아함 42 mm 로즈 골드로
+                나에게 맞는 갤럭시 워치를 선택할 수 있습니다.</p>
+            <div class="col-sm-12">
+                <div class="-col-sm-6 sec04-img">
+                    <img src="images/sec04-1.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section04 -->
+    <section>
+        <div class="container">
+            <div class="col-sm-12 clear"></div>
+            <h1 class="text-center sec-text">스트랩 교체로 다양한 스타일 변신</h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -244,11 +275,44 @@
             });
           </script>
     </section>
-    <!-- section03 -->
-    <section></section>
-    <!-- section04 -->
-    <section></section>
     <!-- section05 --> 
+
+    <footer>
+        <div class="container">
+            <div class="col-sm-12 footer">
+                <p class="footer-text">* 사용자 메모리는 OS의 용량과 모바일 기기의 기능을 작동시키는 소프트웨어에 사용되기 때문에 전체 메모리보다 작습니다.
+                    실제 사용자 메모리는 모바일 기기 사용자에 따라 달라지며, 소프트웨어 업그레이드 이후에도 달라질 수 있습니다.
+                <br>
+                * 제공된 설명은 실제 제품에 대한 설명과 다를 수 있습니다. 제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있으며, 제품 스펙은 제품 개량을 위해 사전 예고 없이 변경될 수 있습니다.
+                    이 문서에서 제공되는 모든 기능, 특성, 설명, GUI와 다른 정보들은 혜택, 디자인, 가격, 구성품, 성능, 가능 수량 등의 내용을 포함하며(단, 이에 국한되지 않음) 별도의 통지 없이 변경될 수 있습니다.
+                    화면 내의 내용은 연출된 이미지이며, 데모용으로만 사용됩니다.
+                <br>
+                * 제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있으며, 제품 스펙은 제품 개량을 위해 사전 예고 없이 변경될 수 있습니다.
+                <br>
+                * 제품색상은 모니터에 따라 약간 다를 수 있습니다.
+                <br>
+                * 해당 모델은 구입처에 따라 취급여부가 다를 수 있습니다.
+                <br>
+                * 애플리케이션이나 서비스들은 제공 사업자 사정에 의하여 예고 없이 변경/중단될 수 있습니다.
+                <br>
+                * 배터리 사용 시간은 최초 출하 상태 제품을 기준으로 당사 실험실에서 측정된 전력을 기반으로 산출한 것입니다.
+                　자세한 설명은 https://www.samsung.com/sec/support/battery 을 참조하시기 바랍니다.
+                <br>
+                * 실제 배터리 충전시간과 사용시간은 충전 상태와 사용환경, 네트워크 환경, 사용한 앱, 통화 및 메시지 전송량, 충전 빈도 등에 따라 달라질 수 있습니다.
+                <br>
+                * 13년도 당사의 사용시간 측정 방법이 개정되어, 변경된 규격으로 표기되었습니다. Quick Start Guide와 상이할 수 있습니다.
+                <br>
+                * Web에 표기되는 배터리 사용시간은 소비자 환경과 유사한 조건으로 측정하기 위해 측정방법이 업데이트됩니다. 이에 따라 배터리 사용시간이 변경되는 경우가 발생할 수 있습니다.
+                <br>
+                * LTE는 ETSI의 등록 상표입니다.
+                <br>
+                * 크기와 무게는 제품 구성 및 제조 과정에 따라 다를 수 있습니다.
+                <br>
+                * 국가, 지역, 사업자에 따라 단말이 지원하는 주파수 영역은 다를 수 있습니다.</p>
+            </div>
+        </div>
+        
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

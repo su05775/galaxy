@@ -7,6 +7,11 @@
 .white-text {
     color: #fff;
 }
+p {
+    font-family: 'S-CoreDream-4Regular';
+    color: #444;
+    font-size: 16px;
+}
 /* reset */
 
 .navbar {
@@ -44,24 +49,30 @@
 
 
 #section01 {
-    width: 80%;
-    height: 500px;
-    background-color: #0f2936;
-    line-height: 50px;
-    font-family: 'Noto Sans', sans-serif;
-    margin: 0 auto;
-    line-height: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+}
+.sec01-main {
+    width: 100%;
+}
+.sec01-main {
+    width: 100%;
+    height: 600px;
+    background:  url(../images/main2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .sec01-text1{
-    font-size: 60px;
+    font-size: 55px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     font-family: 'S-CoreDream-6Bold';
 }
 .sec01-text2 {
     font-size: 16px;
     font-family: 'S-CoreDream-4Regular';
-}
-.sec01-main img {
-    padding-top:1%
 }
 /* section01 end */
 
@@ -92,6 +103,8 @@
 }
 .sec02-con h2 {
     width: 98%;
+    color: #333;
+    font-weight: bold;
     font-family: 'S-CoreDream-4Regular';
 }
 .sec02-con p {
@@ -99,7 +112,19 @@
     font-size: 15px
 }
 
+.sec02-water {
+    padding-top: 2%;
+}
+.sec02-water img {
+    width: 100%;
+}
+/* section02 end */
 
+#section03 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
 @import "lesshat";
 
 .ba-slider-container { 
@@ -178,41 +203,64 @@
     height: 500px;
 }
 
-.sec02-daily {
+.sec03-daily {
     padding-top:14%;
     font-family: 'S-CoreDream-6Bold';
 }
-.sec02-daily h1 {
+.sec03-daily h1 {
     color: #333;
 }
-.sec02-daily p {
+.sec03-daily p {
     font-family: 'S-CoreDream-4Regular';
     color: #444;
     font-size: 16px;
 }
-/* section02 end */
+/* section03 end */
 
-#section03 {
+#section04 {
+    width: 100%;
+    height: auto;
+}
+
+.sec04-img img {
+    width: 100%;
+}
+
+#section05 {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
-.sec03-text {
+.sec-text {
     font-family: 'S-CoreDream-6Bold';
     color: #333;
+    margin-bottom: 0;
 }
 .container h1 {
     padding-bottom: 2%;
 }
-
+.swiper-container {
+    padding-bottom: 2%;
+}
 .swiper-slide img {
     width: 100%;
 }
 .swiper-button-next,.swiper-button-prev {
     color: #444;
 }
+/* section05 end */
 
-
+footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.footer-text {
+    font-size: 12px;
+    color: #666;
+    margin: 0 auto;
+}
 
 
 @media (max-width:767px) {
