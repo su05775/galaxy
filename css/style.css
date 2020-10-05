@@ -43,6 +43,11 @@ p {
     font-weight: bold;
     font-family: 'S-CoreDream-4Regular';
 }
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+}
 
 /* nav end */
 
