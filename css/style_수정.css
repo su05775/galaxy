@@ -43,6 +43,11 @@ p {
     font-weight: bold;
     font-family: 'S-CoreDream-4Regular';
 }
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+}
 
 /* nav end */
 
@@ -127,8 +132,9 @@ p {
 }
 /* sec02-infobox-1 end */
 
-.sec02-introbox-2 {
+.sec02-infobox-2 {
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .def2 {
@@ -139,6 +145,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 10%;
+    
 }
 .img3{
     background:url(../images/sec02-img2-1.jpg);
@@ -211,7 +218,7 @@ p {
     margin-left: 10%;
 }
 
-.accordion {
+#accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -224,11 +231,11 @@ p {
     transition: 0.4s;
   }
   
-.active, .accordion:hover {
+.active, #accordion:hover {
     background-color: #ccc;
 }
 
-.accordion {
+#accordion {
     background-color: #fff;
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
@@ -237,7 +244,7 @@ p {
     font-size: 16px;
 }
   
-.accordion:after {
+#accordion:after {
     content: '\002B';
     color: #777;
     font-weight: bold;
@@ -245,7 +252,7 @@ p {
     margin-left: 5px;
 }
   
-.active:after {
+#active:after {
     content: "\2212";
 }
   

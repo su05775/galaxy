@@ -1,5 +1,55 @@
-// Call & init
-    $(document).ready(function(){
+function ChangeColor1(t)
+{
+    if( t == '1' ){       
+        document.getElementById('here').className = "img1";       
+    }else if( t == '2' ) {
+        document.getElementById('here').className = "img2";
+    };
+};
+
+function ChangeColor2(r)
+{
+    if( r == '3' ){       
+        document.getElementById('here2').className = "img3";       
+    }else if( r == '4' ) {
+        document.getElementById('here2').className = "img4";
+    };
+};
+
+function ChangeColor3(e)
+{
+    if( e == '5' ){       
+        document.getElementById('here3').className = "img5";       
+    }else if( e == '6' ) {
+        document.getElementById('here3').className = "img6";
+    }else if( e == '7' ) {
+        document.getElementById('here3').className = "img7";
+    }else if( e == '8' ) {
+        document.getElementById('here3').className = "img8";
+    };
+};
+// sec02이미지
+
+var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+// sec02 탭바
+
+
+
+  // Call & init
+  $(document).ready(function(){
     $('.ba-slider').each(function(){
         var cur = $(this);
         // Adjust the slider
@@ -76,15 +126,10 @@
         resizeElement.removeClass('resizable');
     });
     }
-
-    var swiper = new Swiper('.swiper-container', {
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          hide: true,
-        },
-      });
-    //   section05 slider
+// sec03 daily
 
 
-    AOS.init();
-    // aos js
+// section05 modal
+
+AOS.init();
+// aos js
