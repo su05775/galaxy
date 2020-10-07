@@ -4,6 +4,10 @@
 
 @font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+li {
+    list-style: none;
+    text-decoration: none;
+}
 .white-text {
     color: #fff;
 }
@@ -421,7 +425,7 @@ p {
     width: 60%;
     height: 700px;
     margin: 0 auto;
-    background: url('../images/style.jpg');
+    background: url('../images/style_2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -477,11 +481,22 @@ p {
     width: 100%;
     margin-bottom: 30%;
 }
-
-.modal-body img {
-    width: 100%;
+.modal-body3 {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
 }
-/* section06 end */
+.slide_img {
+    position: absolute;
+    width: 600px;
+    transition: 1s;
+}
+.slide_img > li {
+    float: left;
+    font-size: 0;
+    width: 600px;
+}
+/* section05 end */
 
 #section06 {
     background: url(../images/sec6_bg.jpg);

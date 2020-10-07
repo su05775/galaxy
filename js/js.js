@@ -128,6 +128,22 @@ var acc = document.getElementsByClassName("accordion");
     }
 // sec03 daily
 
+$(function(){
+    setInterval(function(){
+        $(".modal-body3").delay("2500");
+        $(".modal-body3").animate({
+            marginLeft: "-600px"
+        }, "500");
+        $(".modal-body3").delay("2500");
+        $(".modal-body3").animate({
+            marginLeft: "-1200px"
+        }, "500");
+        $(".modal-body3").delay("2500");
+        $(".modal-body3").animate({
+            marginLeft: "0"
+        }, "500");
+    });
+});
 
 // section05 modal
 
