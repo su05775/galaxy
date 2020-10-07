@@ -37,9 +37,9 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right" 
                 data-aos-duration="3000"data-aos="fade-left">
-                    <li><a href="#section02">특장점</a></li>
+                    <li><a href="#section02">기능</a></li>
+                    <li><a href="#section04">스타일</a></li>
                     <li><a href="#">스펙</a></li>
-                    <li><a href="#">고객지원</a></li>
                 </ul>
             </div>
         </div>
@@ -188,16 +188,10 @@
         <div class="container">
             <div class="sec04-text">
                 <h1 class="text-center ">갤럭시워치, 스타일의 폭을 확장하다</h1>
+                <h4 class="text-center">버튼을 눌러 다양한 스타일을 확인하세요</h4>
             </div>
-            <img src="images/" alt="">
-        </div>
-    </section>
-    <!-- section04 -->
-
-    <section id="section05">
-        <div class="container">
-
-            <!-- Trigger the modal with a button -->
+            <div class="container section04">
+                <!-- Trigger the modal with a button -->
             <button type="button" class="btn1 btn-info btn-lg" data-toggle="modal" data-target="#myModal">
                 <img src="images/modal1.png" alt="modal icon">
             </button>
@@ -210,8 +204,12 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Rose Gold</h4>
                     </div>
-                    <div class="modal-body">
-                        <img src=images/RoseGold.jpg alt="">
+                    <div class="modal-body1">
+                        <div class="slide-img">
+                            <li><img src="images/modal1-main.png" alt=""></li>
+                            <li><img src="images/modal1-1.png" alt=""></li>
+                            <li><img src="images/modal1-2.png" alt=""></li>    
+                        </div>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -233,8 +231,12 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Silver</h4>
                     </div>
-                    <div class="modal-body">
-                        <img src=images/silver.jpg alt="">
+                    <div class="modal-body2">
+                        <div class="slide-img">
+                            <li><img src="images/modal2-main.png" alt=""></li>
+                            <li><img src="images/modal2-1.png" alt=""></li>
+                            <li><img src="images/modal2-2.png" alt=""></li>    
+                        </div>
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -258,9 +260,9 @@
                     </div>
                     <div class="modal-body3">
                         <div class="slide-img">
-                            <li><img src=images/dark.jpg alt=""></li>
-                            <li><img src="images/sec03-2.jpg" alt=""></li>
-                            <li><img src="images/sec03-6.webp" alt=""></li>    
+                            <li><img src="images/modal3-main.png" alt=""></li>
+                            <li><img src="images/modal3-1.png" alt=""></li>
+                            <li><img src="images/modal3-2.png" alt=""></li>    
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -269,17 +271,230 @@
                 </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section05 --> 
-
-    <!-- <section id="section06">
-        <div class="container">
-            <div class="col-sm-12 sec06-content">
             </div>
         </div>
-    </section> -->
+    </section>
+    <!-- section04 -->
 
+    <section id="section05">
+        <div class="container">
+            <h2 class="text-center">스펙 살펴보기</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">연결</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">디스플레이</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">오디오</button>
+                <button class="tablinks" onclick="openCity(event, 'seoul')">외관사양</button>
+                <button class="tablinks" onclick="openCity(event, 'busan')">배터리</button>
+                <button class="tablinks" onclick="openCity(event, 'gimpo')">메모리</button>
+                <button class="tablinks" onclick="openCity(event, 'paju')">기본정보</button>
+            </div>
+
+            <div id="London" class="tabcontent1">
+                <ul class="col">
+                    <li>
+                        <h4>ANT+</h4>
+                        <p>No</p>
+                    </li>
+                    <li>
+                        <h4>워치기술</h4>
+                        <p>GPS, Glonass</p>
+                    </li>
+                    <li>
+                        <h4>Wi-Fi</h4>
+                        <p>802.11 b/g/n 2.4 GHz</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>블루투스 버전</h4>
+                        <p>Bluetooth v4.2</p>
+                    </li>
+                    <li>
+                        <h4>NFC</h4>
+                        <p>Yes</p>
+                    </li>
+                    <li>
+                        <h4>블루투스 프로파일</h4>
+                        <p>A2DP,AVRCP,HFP,HSP</p>
+                    </li>    
+                </ul>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>종류(Main)</h4>
+                        <p>Super AMOLED</p>
+                    </li>
+                    <li>
+                        <h4>크기(Main)</h4>
+                        <p>32.9 mm</p>
+                    </li>
+                    <li>
+                        <h4>해상도(Main)</h4>
+                        <p>360 x 360</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>색상 (Main)</h4>
+                        <p>16 M</p>
+                    </li>   
+                </ul>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>오디오 지원 포맷</h4>
+                        <p>MP3,M4A,3GA,AAC,OGG, <br> OGA,WAV,WMA,AMR,AWB</p>
+                    </li>   
+                </ul>
+            </div>
+
+            <div id="seoul" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>크기(세로x가로x두께)</h4>
+                        <p>49.0 x 46.0 x 13.0 mm</p>
+                    </li>  
+                    <li>
+                        <h4>무게</h4>
+                        <p>63 g</p>
+                    </li>   
+                </ul>
+            </div>
+
+            <div id="busan" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>배터리 용량(mAh, Typical)</h4>
+                        <p>472 mAh</p>
+                    </li>
+                    <li>
+                        <h4>교체 가능</h4>
+                        <p>No</p>
+                    </li>
+                    <li>
+                        <h4>평균 사용 시간 (시간)</h4>
+                        <p>평균 80 시간</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>최대 사용 시간 (시간)</h4>
+                        <p>최대 168 시간</p>
+                    </li>
+                    <li>
+                        <h4>단독 음악 재생 시간</h4>
+                        <p>최대 16 시간</p>
+                    </li>
+                    <li>
+                        <h4>실내 운동 시간</h4>
+                        <p>최대 77 시간</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>실외 운동 시간 (GPS 사용)</h4>
+                        <p>최대 23 시간</p>
+                    </li>   
+                </ul>
+            </div>
+
+            <div id="gimpo" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>RAM Size (GB)</h4>
+                        <p>0.75 GB</p>
+                    </li>
+                    <li>
+                        <h4>ROM Size (GB)</h4>
+                        <p>4 GB
+                        </p>
+                    </li>
+                    <li>
+                        <h4>사용할 수 있는 메모리*</h4>
+                        <p>1.5 GB</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>외장 메모리 지원</h4>
+                        <p>N/A</p>
+                    </li>   
+                </ul>
+            </div>
+
+            <div id="paju" class="tabcontent">
+                <ul class="col">
+                    <li>
+                        <h4>제품명</h4>
+                        <p>특정소출력 무선기기(무선 <br> 데이터통신시스템용 무선기기)</p>
+                    </li>
+                    <li>
+                        <h4>제조자/수입자</h4>
+                        <p>삼성전자㈜</p>
+                    </li>
+                    <li>
+                        <h4>제조국가</h4>
+                        <p>베트남</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>KC 인증 필 유무</h4>
+                        <p> R-CMM-SEC-SMR800</p>
+                    </li>
+                    <li>
+                        <h4>동일모델의 출시년월</h4>
+                        <p>2018년 8월</p>
+                    </li>
+                    <li>
+                        <h4>A/S 책임자와 전화번호</h4>
+                        <p>삼성전자서비스센터 / 1588-3366</p>
+                    </li>    
+                </ul>
+                <ul class="col">
+                    <li>
+                        <h4>품질보증기준</h4>
+                        <p>결함·하자 등에 따른 <br> 소비자 피해에 대해서는 <br> 소비자분쟁해결기준 <br> (소비자기본법 제16조)에 <br> 따라 보상 가능</p>
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- section05 end --> 
+
+    <section id="section06">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="col-sm-6 sec06-footer-text">
+                    <p>
+                        * 사용자 메모리는 OS의 용량과 모바일 기기의 기능을 작동시키는 소프트웨어에 사용되기 때문에 전체 메모리보다 작습니다.
+                        실제 사용자 메모리는 모바일 기기 사용자에 따라 달라지며, 소프트웨어 업그레이드 이후에도 달라질 수 있습니다. <br> 
+
+                        * 제공된 설명은 실제 제품에 대한 설명과 다를 수 있습니다. 제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있으며, 제품 스펙은 제품 개량을 위해 사전 예고 없이 변경될 수 있습니다.
+                        이 문서에서 제공되는 모든 기능, 특성, 설명, GUI와 다른 정보들은 혜택, 디자인, 가격, 구성품, 성능, 가능 수량 등의 내용을 포함하며(단, 이에 국한되지 않음) 별도의 통지 없이 변경될 수 있습니다.
+                        화면 내의 내용은 연출된 이미지이며, 데모용으로만 사용됩니다. <br>
+
+                        * 제품 사진 및 특장점 등에는 광고적 표현이 포함되어 실제와 다를 수 있으며, 제품 스펙은 제품 개량을 위해 사전 예고 없이 변경될 수 있습니다. <br>
+
+                        * 제품색상은 모니터에 따라 약간 다를 수 있습니다. <br>
+
+                        <!-- * 해당 모델은 구입처에 따라 취급여부가 다를 수 있습니다. <br>
+
+                        * 배터리 사용 시간은 최초 출하 상태 제품을 기준으로 당사 실험실에서 측정된 전력을 기반으로 산출한 것입니다. <br>
+
+                        * 실제 배터리 충전시간과 사용시간은 충전 상태와 사용환경, 네트워크 환경, 사용한 앱, 통화 및 메시지 전송량, 충전 빈도 등에 따라 달라질 수 있습니다. -->
+                    </p>
+                </div>
+                <div class="col-sm-6 sec06-footer-img">
+                    <img src="images/finale_3.png" alt="" class="sec06-img2">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- aos js -->

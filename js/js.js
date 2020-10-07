@@ -130,22 +130,45 @@ var acc = document.getElementsByClassName("accordion");
 
 $(function(){
     setInterval(function(){
-        $(".modal-body3").delay("2500");
-        $(".modal-body3").animate({
-            marginLeft: "-600px"
+        $(".slide-img").delay("2500");
+        $(".slide-img").animate({
+            marginTop: "-410px"
         }, "500");
-        $(".modal-body3").delay("2500");
-        $(".modal-body3").animate({
-            marginLeft: "-1200px"
+        $(".slide-img").delay("2500");
+        $(".slide-img").animate({
+            marginTop: "-810px"
         }, "500");
-        $(".modal-body3").delay("2500");
-        $(".modal-body3").animate({
-            marginLeft: "0"
+        $(".slide-img").delay("2500");
+        $(".slide-img").animate({
+            marginTop: "-410px"
+        }, "500");
+        $(".slide-img").delay("2500");
+        $(".slide-img").animate({
+            marginTop: "0"
         }, "500");
     });
 });
 
-// section05 modal
+// section04 modal
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// section05 tab
 
 AOS.init();
 // aos js
