@@ -30,7 +30,7 @@
 }
 
 .tab {
-    float: left;
+    display: flex;
     width: 10%;
     height: auto;
     background-color: #fff;

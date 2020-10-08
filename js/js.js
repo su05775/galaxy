@@ -146,6 +146,29 @@ $(function(){
     });
 });
 
+$(window).resize(function() {
+     if($(window).width() >414) { 
+        $(function(){
+            setInterval(function(){
+                $(".slide-img").delay("2500");
+                $(".slide-img").animate({
+                    marginTop: "-410px"
+                }, "500");
+                $(".slide-img").delay("2500");
+                $(".slide-img").animate({
+                    marginTop: "-810px"
+                }, "500");
+        
+                $(".slide-img").delay("2500");
+                $(".slide-img").animate({
+                    marginTop: "0"
+                }, "500");
+            });
+        });
+        }
+     });
+
+
 // section04 modal
 
 function openCity(evt, cityName) {
@@ -166,6 +189,7 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 // section05 tab
+
 
 AOS.init();
 // aos js
