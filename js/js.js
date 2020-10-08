@@ -138,10 +138,7 @@ $(function(){
         $(".slide-img").animate({
             marginTop: "-810px"
         }, "500");
-        $(".slide-img").delay("2500");
-        $(".slide-img").animate({
-            marginTop: "-410px"
-        }, "500");
+
         $(".slide-img").delay("2500");
         $(".slide-img").animate({
             marginTop: "0"

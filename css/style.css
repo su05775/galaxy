@@ -16,10 +16,21 @@ li {
 .white-text {
     color: #fff;
 }
+
 p {
     font-family: 'S-CoreDream-4Regular';
     color: #444;
     font-size: 16px;
+}
+
+.clear {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid #ccc;
+}
+.pass {
+    width: 100%;
+    height: 2%;
 }
 /* reset */
 
@@ -100,11 +111,6 @@ p {
     margin: 0 auto;
 }
 
-.clear {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border: 1px solid #ccc;
-}
 .sec02-con {
     font-family: 'S-CoreDream-6Bold';
     color: #222;
@@ -417,7 +423,6 @@ p {
 #section04 {
     width: 100%;
 }
-
 .section04 {
     width: 100%;
     height: 700px;
@@ -532,6 +537,7 @@ p {
 #section05 {
     width: 100%;
     height: auto;
+    padding-bottom: 2%;
 }
 
 #section05 h2 {
@@ -552,14 +558,18 @@ p {
     font-family: 'S-CoreDream-4Regular';
     font-size: 14px;
 }
+
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #fff;
     width: 100%;
 }
-  
-/* Style the buttons inside the tab */
+.tablinks {
+    width: 14.281%;
+}
+
 .tab > button {
     background-color: inherit;
     float: left;
@@ -568,33 +578,34 @@ p {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 15px;
+    font-family: 'S-CoreDream-6Bold';
+    color: #444;
 }
   
-/* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #eee;
 }
   
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
   
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
+    background: #eee;
 }
 .tabcontent1 {
     display: block;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
+    background: #eee;
 }
-/* Fade in tabs */
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -614,25 +625,94 @@ p {
     width: 33%;
 }
 
-
 /* section05 end */
+
 #section06 {
     width: 100%;
-    height: auto;
-    padding-top: 1.5%;
-    padding-bottom: 0.5%;
-    background-color: #5a5a5a;
+    padding-bottom: 2%;
+}
+#section06 h1 {
+    font-family: 'S-CoreDream-6Bold';
+    color: #222;
+    font-size: 40px;
 }
 
-.sec06-footer-text p  {
-    color: #ddd;
-    font-size: 13px;
-    line-height:20px;
+.phone {
+    margin-left: 5%;
 }
-.sec06-img1 {
-    width: 50%;
+
+.phone-text {
+    color: #333;
+    font-size: 22px;   
+    margin-left: 25%;
+    font-weight: bold;
+    padding-top: 5%; 
 }
-.sec06-img2 {
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    font-size: 15px;
+    color: #222;
+    font-family: 'S-CoreDream-6Bold';
+    margin-left: 33%;
+    margin-top: 3%;
+}
+.btn:hover {
+    background: #222;
+    color: white;
+    font-family: 'S-CoreDream-4Regular';
+}
+#section07 {
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    border-top: 1px solid #ccc;
+}
+.sec07-info {
+    width: 80%;
+}
+.sec07-text {
+    margin: 0 auto;
+} 
+.sec07-text p  {
+    color: #666;
+    font-size: 12px;
+    line-height:28px;
+    padding-top: 1%;
+}
+/* section07 end */
+
+
+footer {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.footer {
+    padding: 0;
+}
+
+.footer_box {
     width: 100%;
 }
+.footer-logo > a > img {
+    width: 180px;
+    height: 27.6px;
+    margin-top: 30%;
+    margin-left: 1%;
+}
+.copyright {
+    position: relative;
+    left: 15px;
+}
+.copyright-1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.copyright-2 {
+    font-size: 13px;
 
+}

@@ -4,78 +4,96 @@
 
 @font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+
 #section05 {
-    width: 60%;
-    height: 700px;
-    margin: 0 auto;
-    background: url('../images/style.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    clear: both;
-}
-.modal1 {
-    clear: both;
-    position: fixed;
-    top: 6.2%;
-    left: 57.6%;
-}
-.imgswap1 img:last-child{
-    display:none;
-} 
-.imgswap1:hover img:first-child{
-    display:none;
-} 
-.imgswap1:hover img:last-child{
-    display:inline-block;
-    width: 19%;
-    border: 4px solid #fff;
-    border-radius: 3%;
-    position: fixed;
-    top: 5%;
-    left: 60%;
+    width: 100%;
+    height: auto;
 }
 
-.modal2 {
-    clear: both;
-    position: fixed;
-    top: 34.9%;
-    left: 32.85%;
+#section05 h2 {
+    font-family: 'S-CoreDream-6Bold';
+    color: #222;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 26px;
 }
-.imgswap2 img:last-child{
-    display:none;
-} 
-.imgswap2:hover img:first-child{
-    display:none;
-} 
-.imgswap2:hover img:last-child{
-    display:inline-block;
-    width: 19%;
-    border: 4px solid #fff;
-    border-radius: 3%;
-    position: fixed;
-    left: 23%;
+#section05 h4 {
+    color: #222;
+    font-weight: bold;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 15px;
+}
+#section05 p {
+    color: #444;
+    font-family: 'S-CoreDream-4Regular';
+    font-size: 14px;
 }
 
-.modal3 {
-    clear: both;
-    position: fixed;
-    top: 63%;
-    left: 57.6%;
-
+.tab {
+    float: left;
+    width: 10%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
-.imgswap3 img:last-child{
-    display:none;
-} 
-.imgswap3:hover img:first-child{
-    display:none;
-} 
-.imgswap3:hover img:last-child{
-    display:inline-block;
-    width: 19%;
-    border: 4px solid #fff;
-    border-radius: 3%;
-    position: fixed;
-    top: 33%;
-    left: 60%;
+  
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 9px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: 'S-CoreDream-4Regular';
+}
+
+.tab button:hover {
+    background-color: #f5c5ba;
+}
+  
+.tab button.active {
+    background-color: #eea999;
+}
+  
+.tabcontent {
+    display: none;
+    float: left;
+    padding: 0px 12px;
+    width: 90%;
+    border-left: none;
+    height: 359px;
+    background: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.tabcontent1 {
+    display: block;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    background: #eee;
+    padding: 0px 12px;
+    width: 90%;
+    border-left: none;
+    height: 359px;
+    float: left;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    padding-bottom: 2%;
+    
+}
+.col li {
+    width: 100%;
 }
