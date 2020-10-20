@@ -44,6 +44,11 @@ p {
     z-index: 1;
 }
 
+.navbar-toggle {
+    background: #aaa;
+    border: none;
+}
+
 .navbar-inverse {
     margin: 0;
 }
@@ -892,7 +897,7 @@ footer {
     .modal-body1, .modal-body2, .modal-body3 {
         position: relative;
         overflow: hidden;
-        height: 390px;
+        height: 220px;
         width: 100%;
         margin: 0;
         padding: 5px;
@@ -910,10 +915,17 @@ footer {
         width: 100%;
     }
     .tab > button {
-        padding: 10px 12px;
+        padding: 9px 7px;
+        font-size: 14px;
     }
     .tab {
         width: 100%;
+    }
+    #section05 h4 {
+        font-size: 14px;
+    }
+    #section05 p {
+        font-size: 12px;
     }
     /* section05 end */
 
@@ -937,20 +949,32 @@ footer {
         margin-left: 0;
     }
     .btn {
-        margin-left: 38%;
+        margin-left: 28%;
     }
     /* section06 end */
 
+    #section07 {
+        display: none;
+    }
+
     footer {
         width: 100%;
+        background: #aaa;
     }
     .footer {
         width: 100%;
-        padding: 2% 0 0 0;
+        padding: 0;
     }
     .footer-logo > a > img{
         margin-top: 0;
-        margin-left: 2.2%;
+        margin-left: 27%;
         margin-bottom: 1%;
+    }
+    .copyright {
+        margin-right: 1%;
+        padding: 0;
+    }
+    .copyright-1, .copyright-2 {
+       margin-right: 6%;
     }
 }

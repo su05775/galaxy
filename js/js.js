@@ -146,27 +146,7 @@ $(function(){
     });
 });
 
-$(window).resize(function() {
-     if($(window).width() >414) { 
-        $(function(){
-            setInterval(function(){
-                $(".slide-img").delay("2500");
-                $(".slide-img").animate({
-                    marginTop: "-410px"
-                }, "500");
-                $(".slide-img").delay("2500");
-                $(".slide-img").animate({
-                    marginTop: "-810px"
-                }, "500");
-        
-                $(".slide-img").delay("2500");
-                $(".slide-img").animate({
-                    marginTop: "0"
-                }, "500");
-            });
-        });
-        }
-     });
+
 
 
 // section04 modal
@@ -180,6 +160,10 @@ function openCity(evt, cityName) {
     tabcontent = document.getElementsByClassName("tabcontent1");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
