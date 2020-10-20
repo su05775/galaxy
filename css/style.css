@@ -814,6 +814,146 @@ footer {
     }
 }
 
+@media (max-width:500px) {
+    #section01 {
+        width: 100%;
+        padding-top: 7%;
+    }
+    /* section01 end */
+
+    #section02 {
+        width: 100%;
+    }
+    .def, .def2, .def3{
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .sec02-info {
+        margin: 0 auto;
+    }
+    .sec02-con, .sec02-water h1, .sec03-daily h1, .sec04-text h1, #section06 h1 {
+        font-size:28px;
+    }
+    /* section02 end */
+
+    #section03 {
+        width: 100%;
+    }
+    .sec03-daily {
+        padding-top: 0;
+    }
+    /* section03 end */
+
+    #section04 {
+        width: 100%;
+    }
+    .section04 {
+        width: 100%;
+        height: 400px;
+    }
+    .btn1 {
+        margin-top: 10%;
+    }
+    .btn2 {
+        margin-top: 18%;
+        margin-left: 6%;
+    }
+    .btn3 {
+        margin-top: 15%;
+    }
+    #myModal {
+        width: 100%;
+    }
+    .modal-body1, .modal-body2, .modal-body3 {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+    .slide-img li img {
+        width: 100%;
+    }
+    .modal-content {
+        width: 100%;
+    }
+    /* section04 end */
+
+    #section05 {
+        width: 100%;
+    }
+    .tab > button {
+        padding: 9px 7px;
+        font-size: 14px;
+    }
+    .tab {
+        width: 100%;
+    }
+    #section05 h4 {
+        font-size: 14px;
+    }
+    #section05 p {
+        font-size: 12px;
+    }
+    /* section05 end */
+
+    #section06 {
+        width: 100%;
+    }
+    .phone {
+        width: 100%;
+        flex-direction: column;
+    }
+    .phone>div {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 3%;
+    }
+    .phone>div>img {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .phone-text {
+        margin-left: 0;
+    }
+    .btn {
+        margin-left: 31%;
+    }
+    /* section06 end */
+
+    #section07 {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        background: #aaa;
+    }
+    .footer {
+        width: 100%;
+        padding: 0;
+    }
+    .footer-logo > a > img{
+        margin-top: 0;
+        margin-left: 27%;
+        margin-bottom: 1%;
+    }
+    .copyright {
+        margin-right: 1%;
+        padding: 0;
+    }
+    .copyright-1, .copyright-2 {
+       margin-right: 6%;
+    }
+}
+
 @media (max-width:414px) {
     #section01 {
         width: 100%;
@@ -956,6 +1096,7 @@ footer {
     #section07 {
         display: none;
     }
+    /* section07 end */
 
     footer {
         width: 100%;
